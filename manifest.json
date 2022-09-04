@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+
+    "name": "Youtube Ads Blocker",
+    "description": "This is a Chrome's extension",
+    "version": "1.0",
+
+    "content_scripts": [
+        {
+            "js": ["scripts.js"],
+            "run_at": "document_idle",
+            "matches": ["<all_urls>"]
+        }
+    ],
+
+    "permissions": ["tabs", "activeTab"]
+}
